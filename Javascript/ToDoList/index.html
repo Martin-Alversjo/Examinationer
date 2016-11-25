@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Indie+Flower|Open+Sans" rel="stylesheet">
+		<link rel="Stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<meta charset="utf-8">
+			<title>ToDo List</title>
+	</head>
+    <body>
+		<style type="text/css">
+
+
+
+
+	</style>
+
+	<div class="app-wrap">
+
+			<h1 id="hText"><span id="infoStyle1">Att göra idag</span></h1>
+
+			<div class="container">
+				<div class="row paddingInputField">
+					<input type="text" id="input" placeholder="Vad jag ska göra idag...">
+					<span onclick="addToDo()" class="addBtn"><i class="fa fa-plus" aria-hidden="true"></i></span>
+				</div>
+
+					<div class="row">
+
+							<div class="col">
+								<p class="divHeader">Att göra:</p>
+								  <div class="box">
+
+									  <ul class="listData" id="ul1">
+
+									</ul>
+					    	</div>
+							</div>
+
+							<div class="col">
+								<p class="divHeader">Färdiga sysslor:</p>
+								 <div class="box">
+									 <ul class="listData" id="ul2"></ul>
+					        </div>
+							</div>
+
+					</div>
+
+
+		</div>
+
+	</div>
+
+
+
+				 <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
