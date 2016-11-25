@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="eng">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="Stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Open+Sans" rel="stylesheet">
+  <title>Receptgeneratorn</title>
+</head>
+
+<body>
+  <!-- Header div -->
+  <div class="header"><h1>LCHF Receptgenerator</h1><i class="fa fa-cutlery" aria-hidden="true"></i></div>
+  <!-- Container att hålla kolumnerna -->
+    <div class="container">
+  <!-- Kolumn för andra "huvudtext" -->
+      <div class="row-text"><h2>Tryck på knappen för att få din LCHF-Måltid</h2></div>
+  <!-- Kolumn med button och checkbox, för att generera fram ett recept -->
+        <div class="row-box">
+
+          <div class="col1">
+            <!--Knapp för att få sitt recept, hämtar funktionen checkVego från .js filen-->
+            <button id="button" onclick="checkVego()">Dagens Recept</button> </br>
+            <!--Checkboxen för om man vill endast få vegetariska rätter-->
+              <input type="checkbox" name="veg" value="Veggo" id="vegetarisk" /> Vegetarisk
+
+
+        </div>
+
+  <!-- Andra kolumnen för att namn på recept och länk på tallriken -->
+        <div class="col2" id="column2"></div>
+      </div>
+
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
